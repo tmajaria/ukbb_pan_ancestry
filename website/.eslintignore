@@ -1,7 +1,0 @@
-# Production
-/build
-
-# Generated files
-.docusaurus
-.cache-loader
-
