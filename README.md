@@ -1,7 +1,7 @@
 # MGBB Diverse pops (adpatation of UKBB-Diverse-pops)
 Author: [Tim Majarian](tmajaria@broadinstitute.org)
 
-This repository adapts the Pan UK Biobank ancestry derivation (https://pan.ukbb.broadinstitute.org/) to data from the [Mass General Brigham Biobank](https://www.massgeneral.org/research/division-clinical-research/). Code for running the Pan UK Biobank GWAS & related analyses will not be modified currently.
+This repository adapts the [Pan UK Biobank](https://pan.ukbb.broadinstitute.org/) ancestry derivation to data from the [Mass General Brigham Biobank](https://www.massgeneral.org/research/division-clinical-research/). Code for running the Pan UK Biobank GWAS & related analyses will not be modified currently.
 
 
 ## Original readme
