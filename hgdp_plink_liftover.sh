@@ -7,7 +7,7 @@
 # 	- That is the columns are samples and rows are variants
 
 # env vars
-DATADIR=/Users/tmajaria/Documents/projects/biobanks/general_data/reference/hgdp/
+DATADIR=/Users/tmajaria/Documents/projects/general_data/reference/hgdp/
 plink=/Users/tmajaria/Documents/src/plink/plink_mac_20190617/plink
 
 # Go to data directory
@@ -81,7 +81,9 @@ python3 /Users/tmajaria/Documents/projects/biobanks/mgb/code/ukbb_pan_ancestry/r
 	--log bad_lifted.dat
 
 # Get failed variants in correct format
-awk '{print $2}' good_lifted.map | tail -n +1 -q > snplist.txt
+# awk '{print $2}' good_lifted.map | tail -n +1 -q > snplist.txt
+# get chr position for filtering 1kg data
+awk '{print $1 $4}' hgdp_hg19.bim > snppos.txt
 
 # Remove failed variants from lifted over dataset and conver to plink binary
 # This should result in 1043 individuals with 644117
